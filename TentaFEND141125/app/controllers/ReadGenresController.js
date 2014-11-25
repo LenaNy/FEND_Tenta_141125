@@ -1,5 +1,5 @@
 ﻿function ReadGenresController($scope, $http) {
-    $http.get("odata/genres")
+    $http.get("/odata/Genres")
         .success(function(data, status) {
             $scope.Genres = data.value;
         });
