@@ -3,7 +3,7 @@
 app.config(function($routeProvider) {
     $routeProvider.when('/',
         {
-            templateUrl: "/app/partials/NewGenres.html",
+            templateUrl: "/app/partials/NewGenre.html",
             controller: "NewGenresController"
         })
         .when('/Read', {

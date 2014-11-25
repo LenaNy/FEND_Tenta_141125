@@ -4,3 +4,12 @@
             $scope.Genres = data.value;
         });
 }
+
+function DeleteGenre($scope, $http) {
+    var url = "/odata/Genres('" + key + "')";
+    $http.delete(url)
+        .success(function () {
+            console.log(key + " was saved.");
+        });
+    console.log("Remove Genre");
+}
