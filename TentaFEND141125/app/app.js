@@ -12,5 +12,6 @@ app.config(function($routeProvider) {
         });
 });
 
-app.controller('ReadGenresController', ReadGenresController);
+app.controller('ReadGenresController', ReadGenresController)
+    .controller('NewGenresController', NewGenresController);
 
