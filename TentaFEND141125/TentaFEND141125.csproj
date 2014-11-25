@@ -93,6 +93,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.js" />
+    <Content Include="app\controllers\NewGenresController.js" />
+    <Content Include="app\controllers\ReadGenresController.js" />
     <Content Include="app\Index.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -201,7 +203,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\controllers\" />
     <Folder Include="app\partials\" />
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
