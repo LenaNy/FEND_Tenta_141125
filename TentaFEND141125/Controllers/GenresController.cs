@@ -14,17 +14,6 @@ using TentaFEND141125;
 
 namespace TentaFEND141125.Controllers
 {
-    /*
-    The WebApiConfig class may require additional changes to add a route for this controller. Merge these statements into the Register method of the WebApiConfig class as applicable. Note that OData URLs are case sensitive.
-
-    using System.Web.Http.OData.Builder;
-    using System.Web.Http.OData.Extensions;
-    using TentaFEND141125;
-    ODataConventionModelBuilder builder = new ODataConventionModelBuilder();
-    builder.EntitySet<Genre>("Genres");
-    builder.EntitySet<Track>("Tracks"); 
-    config.Routes.MapODataServiceRoute("odata", "odata", builder.GetEdmModel());
-    */
     public class GenresController : ODataController
     {
         private ChinookEntities db = new ChinookEntities();
