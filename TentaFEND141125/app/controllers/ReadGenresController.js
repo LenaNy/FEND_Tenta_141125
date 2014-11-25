@@ -3,13 +3,14 @@
         .success(function(data, status) {
             $scope.Genres = data.value;
         });
-}
 
-function DeleteGenre($scope, $http) {
+$scope.deleteGenres = function(key) {
     var url = "/odata/Genres('" + key + "')";
     $http.delete(url)
         .success(function () {
             console.log(key + " was saved.");
         });
-    console.log("Remove Genre");
-}
+            console.log("Remove Genre");
+        }
+    }
+
