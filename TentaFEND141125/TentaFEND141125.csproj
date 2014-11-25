@@ -95,6 +95,8 @@
     <Content Include="app\app.js" />
     <Content Include="app\controllers\NewGenresController.js" />
     <Content Include="app\controllers\ReadGenresController.js" />
+    <Content Include="app\controllers\UpdateGenresController.js" />
+    <Content Include="app\partials\UpdateGenre.html" />
     <Content Include="app\partials\NewGenre.html" />
     <Content Include="Index.html" />
     <Content Include="app\partials\ReadGenres.html" />
