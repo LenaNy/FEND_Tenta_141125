@@ -1,11 +1,11 @@
 ﻿    <div class="table-responsive">
         <table class="table">
-            <thead><tr class="row"><th class="col-md-3">ID</th><th class="col-md-3">Name</th><th class="col-md-3"></th><th class="col-md-3">Delete</th></tr></thead>
+            <thead><tr class="row"><th class="col-md-3">ID</th><th class="col-md-3">Name</th><th class="col-md-3">Update</th><th class="col-md-3">Delete</th></tr></thead>
             <tbody>
                 <tr data-ng-repeat="g in Genres" class="row">
                     <td class="col-md-3" data-ng-bind="g.GenreId" id="Id"></td>
                     <td class="col-md-3" data-ng-bind="g.Name" id="Name"></td>
-                    <td class="col-md-3"><a href="#/Update" class="btn btn-primary" data-ng-click="EditGenre(g.GenreId)">Edit</a></td>
+                    <td class="col-md-3"><a href="#/Update" class="btn btn-primary" data-ng-click="UpdateGenre(g.GenreId)">Update</a></td>
                     <td class="col-md-3"><button class="btn btn-primary" data-ng-click="deleteGenres(g.GenreId)">Delete</button></td>
                 </tr>
             </tbody>

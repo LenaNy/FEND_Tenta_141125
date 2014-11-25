@@ -1,11 +1,11 @@
-﻿<div class="form-group" data-ng-repeat="g in Genres">
+﻿<div class="form-group">
     <h5 for="GenreId">ID</h5>
     <br />
-    <label class="form-control" data-ng-bind="g.GenreId"></label>
+    <label id="id" class="form-control" data-ng-bind="g.GenreId"></label>
     <br />
     <h5 for="Name">Name</h5>
     <br />
-    <input type="text" class="form-control" data-ng-bind="g.Name" />
+    <input type="text" id="Name" class="form-control" data-ng-bind="g.Name" />
     <br />
-    <button data-ng-click="UpdateGenre()" class="btn btn-primary form-control" style="width: 30%;">Save Changes</button>
+    <button data-ng-click="UpdateGenre(g.GenreId)" class="btn btn-primary form-control" style="width: 30%;">Save Changes</button>
 </div>
