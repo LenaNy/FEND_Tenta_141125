@@ -1,0 +1,13 @@
+﻿    <div class="table-responsive">
+        <table class="table">
+            <thead><tr class="row"><th class="col-md-2">ID</th><th class="col-md-2">First Name</th><th class="col-md-2">Last Name</th><th class="col-md-2">Phone</th><th class="col-md-2"></th><th class="col-md-2">Delete</th></tr></thead>
+            <tbody>
+                <tr data-ng-repeat="a in Authors" class="row">
+                    <td class="col-md-3" data-ng-bind="GenreId" id="Id"></td>
+                    <td class="col-md-3" data-ng-bind="Name" id="Name"></td>
+                    <td class="col-md-3"><a href="#/Edit" class="btn btn-primary" data-ng-click="EditAuthors(a.au_id)">Edit</a></td>
+                    <td class="col-md-3"><button class="btn btn-primary" data-ng-click="DeleteAuthors(a.au_id)">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
